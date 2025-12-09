@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(240, 100%, 27%);
+}
+
+.m_p {
+  background-color: crimson;
+  margin: 20px;
+}
+
+.Margin {
+  background-color: hsl(240, 100%, 40%);
+  margin: 65px;
+  padding: 12px;
+}
+
+.Border {
+  background-color: blueviolet;
+  margin: 65px;
+  padding: 12px;
+}
+
+.Padding {
+  background-color: brown;
+  margin: 65px;
+  padding: 12px;
+}
+
+.Content {
+  background-color: darkorange;
+  margin: 65px;
+  padding: 12px;
+  text-align: center;
+}
