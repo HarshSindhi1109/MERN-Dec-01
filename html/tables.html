@@ -11,10 +11,30 @@
       th {
         border: 2px solid black;
       }
+
+      #mainTable {
+        border: 4px solid red;
+      }
+
+      #subTable1 {
+        border: 3px solid yellow;
+      }
+
+      #subTable2 {
+        border: 3px solid blue;
+      }
+
+      #subTable3 {
+        border: 3px solid violet;
+      }
+
+      #subTable4 {
+        border: 3px solid purple;
+      }
     </style>
   </head>
   <body>
-    <table>
+    <!-- <table>
       <caption>
         Sample table 1.1
       </caption>
@@ -41,6 +61,75 @@
       <tr>
         <td colspan="2">Total</td>
         <td>500</td>
+      </tr>
+    </table> -->
+    <table id="mainTable">
+      <caption>
+        Container Table
+      </caption>
+
+      <tr>
+        <td>
+          <table id="subTable1">
+            <tr>
+              <th colspan="2">Nested Table 1</th>
+            </tr>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+            </tr>
+            <tr>
+              <td>Our First Table</td>
+              <td>Nested Within</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table id="subTable2">
+            <tr>
+              <th colspan="2">Nested Table 2</th>
+            </tr>
+            <tr>
+              <td rowspan="3">
+                <ul>
+                  <li>List Object 1</li>
+                  <li>List Object 2</li>
+                  <li>List Object 3</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table id="subTable3">
+            <tr>
+              <th colspan="2">Nested Table 3</th>
+            </tr>
+            <tr>
+              <td>Nested Table</td>
+              <td>Demo Continued</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table id="subTable4">
+            <tr>
+              <th colspan="2">Nested Table 4</th>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="../images/green_loop_leaf_check_mark_logo.jpg"
+                  height="60px"
+                  width="120px"
+                  alt=""
+                />
+              </td>
+            </tr>
+          </table>
+        </td>
       </tr>
     </table>
   </body>

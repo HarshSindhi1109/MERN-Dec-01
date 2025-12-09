@@ -6,17 +6,208 @@
     <title>Forms</title>
   </head>
   <body>
-    <form method="post">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" required /><br />
+    <!-- <form method="post">
+      <fieldset>
+        <legend>Demo Form</legend>
+        
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Your Name"
+          required
+        /><br /><br />
 
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required /><br />
+        
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email"
+          required
+        /><br /><br />
 
-      <label for="password">Password:</label>
-      <input type="password" name="password" id="password" required /><br />
+        
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Your Password"
+          required
+        /><br /><br />
+
+        
+        <label for="favWebLang">Choose Your Favorite Web Language: </label>
+
+        <label for="html">HTML</label>
+        <input type="radio" name="favWebLang" id="html" value="HTML" />
+        <label for="css">CSS</label>
+        <input type="radio" name="favWebLang" id="css" value="CSS" />
+        <label for="javascript">JavaScript</label>
+        <input
+          type="radio"
+          name="favWebLang"
+          id="javascript"
+          value="JavaScript"
+        /><br />
+        <br />
+
+        
+        <label for="favColor">Choose Your Favorite Color: </label>
+
+        <input type="checkbox" name="red" id="red" />
+        <label for="red">Red</label>
+
+        <input type="checkbox" name="blue" id="blue" />
+        <label for="blue">Blue</label>
+
+        <input type="checkbox" name="green" id="green" />
+        <label for="green">Green</label>
+
+        <input type="checkbox" name="yellow" id="yellow" />
+        <label for="yellow">Yellow</label><br /><br />
+
+        
+        <label for="colors">Select a Color: </label>
+        <input type="color" name="colors" id="colors" /><br /><br />
+
+        
+        <label for="dob">Date Of Birth: </label>
+        <input type="date" name="dob" id="dob" /><br /><br />
+
+        <label for="datemax">Enter a date before 2004-01-01</label>
+        <input
+          type="date"
+          name="datemax"
+          id="datemax"
+          max="2003-12-31"
+        /><br /><br />
+
+        
+        <label for="datetime">Enter a date and time: </label>
+        <input
+          type="datetime-local"
+          name="datetime"
+          id="datetime"
+        /><br /><br />
+
+        
+        <label for="image">Image: </label>
+        <input
+          type="image"
+          src="../images/green_loop_leaf_check_mark_logo.jpg"
+          alt="Green Loop Leaf Check Mark Image"
+          height="100px"
+          width="100px"
+        /><br /><br />
+
+        
+        <label for="file">Upload File: </label>
+        <input type="file" name="file" id="file" /><br /><br />
+
+        
+        <label for="age">Enter Age: </label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="18"
+          max="100"
+        /><br /><br />
+
+        
+        <label for="phone">Enter Phone No.: </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="12345-67890"
+          pattern="[0-9]{5}-[0-9]{5}"
+        /><br /><br />
+
+        
+        <label for="webLang">Select Web Language: </label>
+        <select name="webLang" id="webLang">
+          <option value="">Choose Any One Language</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="react">React</option>
+          <option value="nodejs">Nodejs</option>
+        </select>
+        <br /><br />
+
+        
+        <label for="address">Address: </label>
+        <textarea name="address" id="address" rows="10" cols="10"></textarea
+        ><br /><br />
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button disabled="disabled">Disabled</button>
+      </fieldset>
+    </form> -->
+    <h1>Application Form</h1>
+    <form action="" method="post">
+      <label for="firstName">First Name: </label>
+      <input type="text" name="firstName" id="firstName" />
+
+      <label for="lastName">Last Name: </label>
+      <input type="text" name="lastName" id="lastName" /> <br /><br />
+
+      <label for="dob">Date Of Birth: </label>
+      <input type="date" name="dob" id="dob" />
+
+      <label for="age">Age: </label>
+      <input type="number" name="age" id="age" /><br /><br />
+
+      <label for="gender">Gender:</label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter Email Address"
+      /><br /><br />
+
+      <label for="pos">Position Available: </label>
+
+      <input type="radio" name="pos" id="juniorDev" />
+      <label for="juniorDev">Junior Developer</label>
+
+      <input type="radio" name="pos" id="midLevelDev" />
+      <label for="midLevelDev">Mid-level Developer</label>
+
+      <input type="radio" name="pos" id="seniorDev" />
+      <label for="seniorDev">Senior Developer</label><br /><br />
+
+      <label for="progLang">Programming Languages: </label>
+
+      <input type="checkbox" name="java" id="java" />
+      <label for="java">Java</label>
+
+      <input type="checkbox" name="javascript" id="javascript" />
+      <label for="javascript">JavaScript</label>
+
+      <input type="checkbox" name="python" id="python" />
+      <label for="python">Python</label><br /><br />
+
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" />
+
+      <label for="repword">Confirm Password: </label>
+      <input type="password" name="repword" id="repword" /><br /><br />
 
       <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
   </body>
 </html>
