@@ -1,0 +1,109 @@
+/* Unvisited Link */
+a:link {
+  color: green;
+  text-decoration: none;
+}
+
+/* Visited Link */
+a:visited {
+  color: purple;
+}
+
+/* Mouse Hover */
+a:hover {
+  color: cornflowerblue;
+  text-decoration-line: underline;
+}
+
+/* Active Link */
+a:active {
+  color: crimson;
+}
+
+.btn1:link,
+.btn1:visited {
+  color: red;
+  background-color: white;
+  text-decoration: none;
+  padding: 15px;
+  border: 2px solid red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn1:hover,
+.btn1:active {
+  color: white;
+  background-color: red;
+  text-decoration-line: none;
+}
+
+.btn2:link,
+.btn2:visited {
+  color: #1877f2;
+  background-color: white;
+  text-decoration: none;
+  padding: 15px;
+  border: 2px solid #1877f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn2:hover,
+.btn2:active {
+  color: white;
+  background-color: #1877f2;
+  text-decoration-line: none;
+}
+
+.eightLinks a:link,
+.eightLinks a:visited,
+.eightLinks a:hover,
+.eightLinks a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.eightLinks p {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 30%;
+}
+
+#p1 {
+  border-color: cornflowerblue;
+}
+
+#p2 {
+    border-color: crimson;
+    background-color: hsl(348, 83%, 87%);
+}
+
+#p3 {
+    border-color: hsl(195, 53%, 79%);
+    background-color: hsl(195, 53%, 88%);
+}
+
+#p4 {
+    border-color: darkgreen;
+    background-color: lightgreen;
+}
+
+#p5 {
+    border-color:hsl(33, 100%, 50%);
+    background-color: hsl(33, 100%, 80%);
+}
+
+#p6 {
+    border-color: hsl(240, 100%, 50%);
+    background-color: hsl(240, 100%, 85%);
+}
+
+#p7 {
+    border-color:hsl(33, 100%, 30%);
+    background-color: hsl(33, 100%, 70%);
+}
+
+#p8 {
+    border-color: hsl(330, 100%, 51%);
+    background-color: hsl(330, 100%, 71%);
+}

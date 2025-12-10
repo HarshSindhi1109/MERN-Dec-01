@@ -1,0 +1,7 @@
+div {
+  border: 2px solid black;
+  outline: dashed 10px crimson;
+  outline-offset: 5px;
+  padding: 20px;
+  margin: 10px;
+}
