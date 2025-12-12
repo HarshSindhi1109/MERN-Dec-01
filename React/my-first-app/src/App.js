@@ -5,13 +5,16 @@
 // import Goal from './Goal';
 // import Garage from './Garage';
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import Blog from './pages/Blog';
-import Layout from './pages/Layout';
-import NoPage from './pages/NoPage';
+import { useState } from 'react';
+
+// import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+// import Home from './pages/Home';
+// import Blog from './pages/Blog';
+// import Layout from './pages/Layout';
+// import NoPage from './pages/NoPage';
 
 function App() {
+  const [color, setColor] = useState('Blue');
   return (
     <>
       {/* <h2>Hello World!</h2>
@@ -40,7 +43,7 @@ function App() {
 
       <Garage /> */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />}></Route>
@@ -48,7 +51,17 @@ function App() {
             <Route path="*" element={<NoPage />}></Route>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <h1>My Favorite Color is {color}!</h1>
+
+      <button
+        onClick={() =>
+          color === 'Green' ? setColor('Blue') : setColor('Green')
+        }
+      >
+        {color === 'Green' ? 'Blue' : 'Green'}
+      </button>
     </>
   );
 }
